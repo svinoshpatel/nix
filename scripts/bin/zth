@@ -1,0 +1,6 @@
+#!/bin/sh
+
+function zthf () {
+  nohup zathura "$1" &
+}
+zthf
