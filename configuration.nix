@@ -89,7 +89,15 @@
     lua
     lua-language-server
     fpc
+    binutils
+    lazarus
+    gnumake
   ];
+
+  environment.variables = {
+    EDITOR = "hx";
+  };
+
 
   fonts.packages = with pkgs; [ 
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; }) 

@@ -17,6 +17,7 @@
   };
 
   programs.lazygit.enable = true;
+  programs.yazi.enable = true;
 
   services.udiskie.enable = true;
   services.picom.enable = true;
