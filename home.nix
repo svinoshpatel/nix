@@ -13,10 +13,6 @@
     shellAliases = {
       rebuild = "sudo nixos-rebuild switch --flake ~/nix";
       homeswitch = "home-manager switch --flake ~/nix";
-    interactiveShellInit = ''
-        eval (ssh-agent -c)
-        ssh-add ~/.ssh/svinpass
-    '';
     };
   };
 
