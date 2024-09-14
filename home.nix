@@ -14,6 +14,12 @@
       rebuild = "sudo nixos-rebuild switch --flake ~/nix";
       homeswitch = "home-manager switch --flake ~/nix";
     };
+    shellInit = ''
+      function sshon
+        eval (ssh-agent -c)
+        ssh-add ~/.ssh/svinpass
+      end
+    '';
   };
 
   programs.lazygit.enable = true;
