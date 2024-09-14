@@ -92,6 +92,7 @@
     binutils
     lazarus
     gnumake
+    foliate
   ];
 
   environment.variables = {
