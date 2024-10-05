@@ -93,6 +93,10 @@
     lazarus
     gnumake
     foliate
+    gimp
+    clang-tools
+    gcc
+    rocmPackages.llvm.clang
   ];
 
   environment.variables = {
