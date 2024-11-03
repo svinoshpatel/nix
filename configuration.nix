@@ -90,13 +90,18 @@
     lua-language-server
     fpc
     binutils
-    lazarus
+    lazarus-qt
     gnumake
     foliate
     gimp
     clang-tools
     gcc
     rocmPackages.llvm.clang
+    xorg.libX11
+    libqt5pas
+    qalculate-gtk
+    qtcreator
+    libsForQt5.full
   ];
 
   environment.variables = {

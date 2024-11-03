@@ -18,6 +18,13 @@
           unit = "\t";
         };
       }
+      {
+        name = "lua";
+        indent = {
+          tab-width = 3;
+          unit = "\t";
+        };
+      }
       ];
     };
     settings = {
