@@ -10,6 +10,9 @@
         steam &
         kitty --class=bottom --hold sh -c "btm" &
         pgrep -x vesktop > /dev/null || vesktop &
+        lxqt-policykit-agent &
+        udiskie &
+        xset s off -dpms
         
         bspc monitor -d 1 2 3 4 5 6 7
       '';

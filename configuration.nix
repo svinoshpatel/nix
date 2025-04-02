@@ -11,6 +11,12 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  boot.kernelPackages = pkgs.linuxKernel.packages.linux_6_6;
+
+  boot.extraModulePackages = with config.boot.kernelPackages; [
+    rtl88xxau-aircrack
+  ];
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   networking.hostName = "hruk"; # Define your hostname.
@@ -100,8 +106,18 @@
     xorg.libX11
     libqt5pas
     qalculate-gtk
-    qtcreator
-    libsForQt5.full
+    libsForQt5.dolphin
+    kdePackages.isoimagewriter
+    gparted
+    lxqt.lxqt-policykit
+    ventoy
+    nemo
+    zerotierone
+    jre8
+    atlauncher
+    r2modman
+    protontricks
+    xsel
   ];
 
   environment.variables = {
@@ -110,8 +126,9 @@
 
 
   fonts.packages = with pkgs; [ 
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; }) 
+    nerd-fonts.jetbrains-mono 
     corefonts
+    times-newer-roman
   ];
   programs.bash = {
     interactiveShellInit = ''
@@ -140,20 +157,18 @@
     jack.enable = true;
   };
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # List services that you want to enable:
   services.udisks2.enable = true;
   services.xserver.enable = true;
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.displayManager.lightdm.greeters.gtk.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
+
+  services.zerotierone = {
+    enable = true;
+    joinNetworks = [
+      "233ccaac27f59459"
+    ];
+  };
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
