@@ -100,6 +100,7 @@
     lutris
     lxqt.lxqt-policykit
     mpv
+    ncurses
     nemo
     neofetch
     onlyoffice-bin
