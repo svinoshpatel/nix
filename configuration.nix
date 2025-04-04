@@ -76,57 +76,56 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    kitty
-    firefox
-    rofi
-    home-manager
-    vesktop
-    pavucontrol
-    pulseaudio
-    p7zip
-    tree
-    telegram-desktop
-    udiskie
+    binutils
     bottom
-    polybar
-    lutris
-    wineWowPackages.stable
-    winetricks
-    flameshot
-    neofetch
+    clang-tools
+    crow
     feh
-    pamixer
-    qbittorrent
-    mpv
-    vim
-    onlyoffice-bin
-    quickemu
+    firefox
+    flameshot
+    foliate
+    fpc
+    gcc
+    gimp
+    gnumake
+    gparted
+    home-manager
+    jre8
+    kdePackages.isoimagewriter
+    kitty
+    lazarus-qt
+    libqt5pas
     lua
     lua-language-server
-    fpc
-    binutils
-    lazarus-qt
-    gnumake
-    foliate
-    gimp
-    clang-tools
-    gcc
-    rocmPackages.llvm.clang
-    xorg.libX11
-    libqt5pas
-    qalculate-gtk
-    libsForQt5.dolphin
-    kdePackages.isoimagewriter
-    gparted
+    lutris
     lxqt.lxqt-policykit
-    ventoy
+    mpv
     nemo
-    zerotierone
-    jre8
-    atlauncher
-    r2modman
+    neofetch
+    onlyoffice-bin
+    p7zip
+    pamixer
+    pavucontrol
+    polybar
     protontricks
+    pulseaudio
+    qalculate-gtk
+    qbittorrent
+    quickemu
+    r2modman
+    rocmPackages.llvm.clang
+    rofi
+    telegram-desktop
+    tree
+    udiskie
+    ventoy
+    vesktop
+    vim
+    wineWowPackages.stable
+    winetricks
+    xorg.libX11
     xsel
+    zerotierone
   ];
 
   environment.variables = {
