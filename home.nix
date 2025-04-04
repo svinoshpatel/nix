@@ -8,7 +8,6 @@
     ./zathura.nix
     ./helix.nix
     ./git.nix
-    nvchad4nix.homeManagerModule
   ];
 
   home = {
@@ -55,40 +54,6 @@
       end
     '';
   };
-
-  programs.nvchad = {
-    enable = true;
-  };
-  home.file.".config/lua/plugins/init-1.lua".text = ''
-    return {
-      {
-        "stevearc/conform.nvim",
-        -- event = 'BufWritePre', -- uncomment for format on save
-        opts = require "configs.conform",
-      },
-
-      -- These are some examples, uncomment them if you want to see them work!
-      {
-        "neovim/nvim-lspconfig",
-        config = function()
-          require "configs.lspconfig"
-        end,
-      },
-
-      {
-        "nvim-treesitter/nvim-treesitter",
-        opts = {
-          ensure_installed = {
-            "vim",
-            "lua",
-            "vimdoc",
-            "html",
-            "css"
-          },
-        },
-      },
-    }
-  '';
 
   programs.lazygit.enable = true;
   programs.yazi.enable = true;
