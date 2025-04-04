@@ -26,6 +26,15 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
+  # Nix garbage collection
+  nix.settings.auto-optimise-store = true;  # Deduplicate identical files
+  nix.gc = {
+    automatic = true;
+    dates = "weekly"; # runs the garbage collector once a week
+    options = "--delete-older-than 30d";  # Keeps last 30 days of generations
+  };
+  boot.loader.systemd-boot.configurationLimit = 10;  # Keeps last 10 boot entries
+
   # Enable networking
   networking.networkmanager.enable = true;
 
