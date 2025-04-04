@@ -20,13 +20,38 @@
   programs.fish = {
     enable = true;
     shellAliases = {
-      rebuild = "sudo nixos-rebuild switch --flake ~/nix";
-      homeswitch = "home-manager switch --flake ~/nix";
+      # rebuild = "sudo nixos-rebuild switch --flake ~/nix";
+      # homeswitch = "home-manager switch --flake ~/nix";
     };
     shellInit = ''
       function sshon
         eval (ssh-agent -c)
         ssh-add ~/.ssh/svinpass
+      end
+
+      function update
+        cd ~/nix
+        nix flake update
+        sudo nixos-rebuild switch --flake .
+        git commit -am "Update flake.lock"
+        sshon
+        git push
+      end
+
+      function rebuild
+        cd ~/nix
+        sudo nixos-rebuild switch --flake .
+        git commit -am "System rebuild"
+        sshon
+        git push
+      end
+
+      function homeswitch
+        cd ~/nix
+        home-manager switch --flake .
+        git commit -am "Home manager rebuild"
+        sshon
+        git push
       end
     '';
   };
