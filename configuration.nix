@@ -104,6 +104,7 @@
     nemo
     neofetch
     onlyoffice-bin
+    osu-lazer
     p7zip
     pamixer
     pavucontrol
