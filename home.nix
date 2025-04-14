@@ -15,7 +15,7 @@
     homeDirectory = "/home/svinoshpatel";
     stateVersion = "24.05";
     sessionVariables = {
-      PATH = "$HOME/.local/bin: $HOME/nix/scripts/bin:$PATH";
+      PATH = "$HOME/nix/scripts/bin:$PATH";
     };
   };
 
