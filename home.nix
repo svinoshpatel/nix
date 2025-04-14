@@ -14,6 +14,9 @@
     username = "svinoshpatel";
     homeDirectory = "/home/svinoshpatel";
     stateVersion = "24.05";
+    sessionVariables = {
+      PATH = "$HOME/.local/bin: $HOME/nix/scripts/bin:$PATH";
+    };
   };
 
   programs.fish = {
