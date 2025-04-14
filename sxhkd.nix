@@ -15,7 +15,7 @@
       "super + Escape" = "pkill -USR1 -x sxhkd";
 
       # program launcher
-      "super + r" = "setxkbmap us; rofi -show run";
+      "super + r" = "setxkbmap us; fish (rofi -show run)";
 
       # change layout
       "shift + Alt_L" = "setxkbmap -query | grep -q 'ua' && setxkbmap us || setxkbmap ua";
