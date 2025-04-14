@@ -103,6 +103,7 @@
     ncurses
     nemo
     neofetch
+    obsidian
     onlyoffice-bin
     osu-lazer
     p7zip
