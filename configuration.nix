@@ -85,6 +85,7 @@
     flameshot
     foliate
     fpc
+    easyeffects
     gcc
     gimp
     gnumake
