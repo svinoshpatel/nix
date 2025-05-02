@@ -107,6 +107,7 @@
     onlyoffice-bin
     osu-lazer
     p7zip
+    paprefs
     pamixer
     pavucontrol
     polybar
