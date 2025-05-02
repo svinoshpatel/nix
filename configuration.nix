@@ -170,6 +170,20 @@
     jack.enable = true;
   };
 
+   environment.etc."pipewire/pipewire.conf.d/virtual-sink.conf".text = ''
+    context.modules = [
+      { name = libpipewire-module-null-audio-sink
+        args = {
+          node.name = "VirtualSink";
+          media.class = "Audio/Sink";
+          sink.properties = {
+            "device.description" = "Virtual Sink for AudioRelay";
+          };
+        };
+      }
+    ]
+  '';
+
   services.udisks2.enable = true;
   services.xserver.enable = true;
   services.xserver.displayManager.lightdm.enable = true;
