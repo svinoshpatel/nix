@@ -131,6 +131,7 @@
     xorg.libX11
     xsel
     zerotierone
+    zenity
   ];
 
   environment.variables = {
