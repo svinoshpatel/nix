@@ -102,6 +102,7 @@
     lxqt.lxqt-policykit
     mpv
     ncurses
+    nix-index
     nemo
     neofetch
     obsidian
