@@ -113,6 +113,7 @@
     pavucontrol
     polybar
     protontricks
+    prismlauncher
     pulseaudio
     qalculate-gtk
     qbittorrent
