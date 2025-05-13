@@ -40,7 +40,6 @@
         state = "tiled";
       };
       "firefox" = {
-        desktop = "^2";
         state = "tiled";
       };
       "TelegramDesktop" = {
