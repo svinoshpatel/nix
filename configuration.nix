@@ -130,6 +130,7 @@
     vim
     wineWowPackages.stable
     winetricks
+    xarchiver
     xorg.libX11
     xsel
     zerotierone
