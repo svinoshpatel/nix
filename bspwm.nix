@@ -40,7 +40,7 @@
         state = "tiled";
       };
       "firefox" = {
-        state = "tiled";
+        # state = "tiled";
       };
       "TelegramDesktop" = {
         desktop = "^3";
