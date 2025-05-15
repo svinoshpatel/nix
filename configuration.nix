@@ -94,7 +94,6 @@
     jre8
     kdePackages.isoimagewriter
     kitty
-    lazarus-qt
     libqt5pas
     lua
     lua-language-server
@@ -118,6 +117,7 @@
     pulseaudio
     qalculate-gtk
     qbittorrent
+    qtcreator
     quickemu
     r2modman
     rocmPackages.llvm.clang
