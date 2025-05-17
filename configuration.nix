@@ -119,10 +119,10 @@
     qbittorrent
     qtcreator
     quickemu
-    qmlls
     r2modman
     rocmPackages.llvm.clang
     rofi
+    rquickshare
     telegram-desktop
     tree
     udiskie
