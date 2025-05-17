@@ -119,6 +119,7 @@
     qbittorrent
     qtcreator
     quickemu
+    qt6ct
     r2modman
     rocmPackages.llvm.clang
     rofi
