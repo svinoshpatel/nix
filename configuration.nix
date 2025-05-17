@@ -112,6 +112,7 @@
     pamixer
     pavucontrol
     polybar
+    peek
     protontricks
     prismlauncher
     pulseaudio
