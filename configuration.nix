@@ -111,6 +111,7 @@
     paprefs
     pamixer
     pavucontrol
+    soundwireserver
     polybar
     peek
     protontricks
