@@ -103,6 +103,7 @@
     ncurses
     nix-index
     nemo
+    file-roller
     nemo-fileroller
     neofetch
     obsidian
@@ -116,14 +117,9 @@
     polybar
     peek
     protontricks
-    prismlauncher
     pulseaudio
-    qalculate-gtk
-    qbittorrent
-    qtcreator
     quickemu
     qt6ct
-    r2modman
     rocmPackages.llvm.clang
     rofi
     rquickshare
@@ -135,7 +131,6 @@
     vim
     wineWowPackages.stable
     winetricks
-    xarchiver
     xorg.libX11
     xsel
     zerotierone
