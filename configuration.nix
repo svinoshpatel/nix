@@ -109,6 +109,9 @@
     obsidian
     onlyoffice-bin
     osu-lazer
+    unrar
+    unzip
+    zip
     p7zip
     paprefs
     pamixer
@@ -138,12 +141,17 @@
     qbittorrent
     qalculate-gtk
     kdePackages.dolphin
+    kdePackages.ark
+    kdePackages.kde-cli-tools
+    kdePackages.kio-extras
+    kdePackages.karchive
+    kdePackages.kio
+    kdePackages.kio-fuse
   ];
 
   environment.variables = {
     EDITOR = "hx";
   };
-
 
   fonts.packages = with pkgs; [ 
     nerd-fonts.jetbrains-mono 
@@ -182,6 +190,11 @@
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.displayManager.lightdm.greeters.gtk.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
+
+  services.dbus.enable = true;
+
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-kde ];
 
   services.zerotierone = {
     enable = true;
