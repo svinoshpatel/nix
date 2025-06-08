@@ -137,7 +137,7 @@
     zenity
     qbittorrent
     qalculate-gtk
-    dolphin
+    kdePackages.dolphin
   ];
 
   environment.variables = {

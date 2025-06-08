@@ -8,7 +8,6 @@
     ./zathura.nix
     ./helix.nix
     ./git.nix
-    ./packages.nix
   ];
 
   home = {
