@@ -194,7 +194,7 @@
   services.dbus.enable = true;
 
   xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-kde ];
+  xdg.portal.extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
 
   services.zerotierone = {
     enable = true;
