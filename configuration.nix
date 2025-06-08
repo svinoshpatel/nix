@@ -135,6 +135,9 @@
     xsel
     zerotierone
     zenity
+    qbittorrent
+    qalculate-gtk
+    dolphin
   ];
 
   environment.variables = {
