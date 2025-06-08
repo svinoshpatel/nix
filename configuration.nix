@@ -103,6 +103,7 @@
     ncurses
     nix-index
     nemo
+    nemo-fileroller
     neofetch
     obsidian
     onlyoffice-bin
