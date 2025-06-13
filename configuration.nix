@@ -76,6 +76,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    appimage-run
     binutils
     bottom
     clang-tools
@@ -158,6 +159,9 @@
     corefonts
     times-newer-roman
   ];
+
+  programs.appimage.enable = true;
+  
   programs.bash = {
     interactiveShellInit = ''
       if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRINGS} ]]
