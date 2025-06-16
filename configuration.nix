@@ -195,7 +195,7 @@
   services.udisks2.enable = true;
   services.xserver.enable = true;
   services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.displayManager.lightdm.greeters.gtk.enable = true;
+  # services.xserver.displayManager.lightdm.greeters.gtk.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
 
   services.dbus.enable = true;
