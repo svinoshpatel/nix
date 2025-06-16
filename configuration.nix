@@ -88,6 +88,7 @@
     fpc
     easyeffects
     gcc
+    godot
     gimp
     gnumake
     gparted
