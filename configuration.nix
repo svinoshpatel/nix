@@ -151,7 +151,7 @@
     kdePackages.kio-fuse
   ];
 
-  sevices.xserver.desktopManager.cinnamon.enable = true;
+  services.xserver.desktopManager.budgie.enable = true;
 
   environment.variables = {
     EDITOR = "hx";
