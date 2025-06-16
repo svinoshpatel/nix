@@ -56,12 +56,6 @@
     LC_TIME = "uk_UA.UTF-8";
   };
 
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.svinoshpatel = {
     isNormalUser = true;
@@ -80,7 +74,6 @@
     binutils
     bottom
     clang-tools
-    crow
     feh
     firefox
     flameshot
@@ -94,7 +87,6 @@
     gparted
     home-manager
     jre8
-    kdePackages.isoimagewriter
     kitty
     libqt5pas
     lua
@@ -104,13 +96,9 @@
     mpv
     ncurses
     nix-index
-    nemo
-    file-roller
-    nemo-fileroller
     neofetch
     obsidian
     onlyoffice-bin
-    osu-lazer
     unrar
     unzip
     zip
@@ -141,8 +129,18 @@
     zerotierone
     zenity
     qbittorrent
-    qalculate-gtk
     kdePackages.dolphin
+    kdePackages.kcalc
+    kdePackages.kolourpaint
+    kdePackages.ksystemlog
+    kdePackages.sddm-kcm
+    kdiff3
+    kdePackages.partitionmanger
+    hardinfo2
+    haruna
+    wayland-utils
+    wl-clipboard
+    kdePackages.isoimagewriter
     kdePackages.ark
     kdePackages.kde-cli-tools
     kdePackages.kio-extras
@@ -150,8 +148,6 @@
     kdePackages.kio
     kdePackages.kio-fuse
   ];
-
-  services.xserver.desktopManager.cinnamon.enable = true;
 
   environment.variables = {
     EDITOR = "hx";
@@ -184,31 +180,37 @@
 
   # Enable sound with pipewire
   security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
+
+  services = {
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+      jack.enable = true;
+    };
+
+    udisks2.enable = true;
+    dbus.enable = true;
+
+    xserver = {
+      enable = true;
+      windowManager.bspwm.enable =true;
+      xkb = {
+        layout = "us";
+        variant = "";
+      };
+    };
+
+    desktopManager.plasma6.enable = true;
+    displayManager.sddm.enable = true;
+    displayManager.sddm.wayland.enable = true;
   };
 
-  services.udisks2.enable = true;
-  services.xserver.enable = true;
-  services.xserver.displayManager.lightdm.enable = true;
+  # services.xserver.displayManager.lightdm.enable = true;
   # services.xserver.displayManager.lightdm.greeters.gtk.enable = true;
-  services.xserver.windowManager.bspwm.enable = true;
-
-  services.dbus.enable = true;
-
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
-
-  services.zerotierone = {
-    enable = true;
-    joinNetworks = [
-      "233ccaac27f59459"
-    ];
-  };
 
   networking.firewall.enable = false;
   # Enable the OpenSSH daemon.
