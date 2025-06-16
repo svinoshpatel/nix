@@ -80,6 +80,7 @@
     binutils
     bottom
     clang-tools
+    cinnamon
     crow
     feh
     firefox
