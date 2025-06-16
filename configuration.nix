@@ -80,7 +80,6 @@
     binutils
     bottom
     clang-tools
-    cinnamon
     crow
     feh
     firefox
@@ -151,6 +150,8 @@
     kdePackages.kio
     kdePackages.kio-fuse
   ];
+
+  sevices.xserver.desktopManager.cinnamon.enable = true;
 
   environment.variables = {
     EDITOR = "hx";
