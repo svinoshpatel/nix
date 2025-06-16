@@ -135,7 +135,6 @@
     kdePackages.ksystemlog
     kdePackages.sddm-kcm
     kdiff3
-    kdePackages.partitionmanger
     hardinfo2
     haruna
     wayland-utils
