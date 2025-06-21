@@ -125,7 +125,6 @@
     wineWowPackages.stable
     winetricks
     xorg.libX11
-    prismlauncher
     xsel
     zerotierone
     zenity
