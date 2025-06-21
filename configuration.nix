@@ -199,6 +199,11 @@
         layout = "us";
         variant = "";
       };
+
+      zerotierone = {
+        enable = true;
+        joinNetworks = [ "856127940c223ee6" ];
+      };
     };
 
     desktopManager.plasma6.enable = true;
