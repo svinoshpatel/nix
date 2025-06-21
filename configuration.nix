@@ -189,6 +189,11 @@
       jack.enable = true;
     };
 
+    zerotierone = {
+      enable = true;
+      joinNetworks = [ "856127940c223ee6" ];
+    };
+
     udisks2.enable = true;
     dbus.enable = true;
 
@@ -198,11 +203,6 @@
       xkb = {
         layout = "us";
         variant = "";
-      };
-
-      zerotierone = {
-        enable = true;
-        joinNetworks = [ "856127940c223ee6" ];
       };
     };
 
