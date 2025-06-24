@@ -74,6 +74,7 @@
     binutils
     bottom
     clang-tools
+    chromium
     feh
     firefox
     flameshot
