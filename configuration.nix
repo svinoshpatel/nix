@@ -75,6 +75,7 @@
     bottom
     clang-tools
     chromium
+    google-chrome
     feh
     firefox
     flameshot
