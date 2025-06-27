@@ -117,6 +117,7 @@
     qt6ct
     rocmPackages.llvm.clang
     rofi
+    reaper
     rquickshare
     telegram-desktop
     tree
