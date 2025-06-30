@@ -6,8 +6,7 @@
     
     settings = {
       confirm_os_window_close = 0;
-      #background_opacity = "0.96";
-      background_opacity = "0.99";
+      background_opacity = "0.96";
       font_family = "JetBrainsMonoNerdFont";
       font_size = "11.0";
 
