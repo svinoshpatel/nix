@@ -130,7 +130,6 @@
     telegram-desktop
     tree
     udiskie
-    ventoy
     vesktop
     vim
     wineWowPackages.stable
