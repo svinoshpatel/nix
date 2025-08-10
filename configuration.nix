@@ -92,8 +92,7 @@
     gnumake
     gparted
     home-manager
-    jre8
-    temurin21
+    jre21
     kitty
     libqt5pas
     lua
