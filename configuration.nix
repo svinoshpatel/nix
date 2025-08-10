@@ -159,8 +159,6 @@
     kdePackages.kio-fuse
   ];
 
-  hardware.opengl.enable = true;
-
   environment.variables = {
     EDITOR = "hx";
   };
