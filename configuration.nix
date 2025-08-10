@@ -93,6 +93,7 @@
     gparted
     home-manager
     jre8
+    temurin21
     kitty
     libqt5pas
     lua
