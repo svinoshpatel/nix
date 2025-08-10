@@ -152,6 +152,7 @@
     kdePackages.karchive
     kdePackages.kio
     kdePackages.kio-fuse
+    minecraft
   ];
 
   environment.variables = {
