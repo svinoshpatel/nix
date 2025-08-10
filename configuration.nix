@@ -152,8 +152,14 @@
     kdePackages.karchive
     kdePackages.kio
     kdePackages.kio-fuse
-    minecraft
+    mesa
+    mesa_drivers
   ];
+
+  hardware.opengl.enable = true;
+  hardware.opengl.driSupport = true;
+  hardware.opengl.driSupport32Bit = true;
+  
 
   environment.variables = {
     EDITOR = "hx";
