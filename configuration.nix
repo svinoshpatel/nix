@@ -92,7 +92,7 @@
     gnumake
     gparted
     home-manager
-    jre21
+    jdk21
     kitty
     libqt5pas
     lua
