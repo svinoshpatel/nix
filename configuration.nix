@@ -152,8 +152,6 @@
     kdePackages.karchive
     kdePackages.kio
     kdePackages.kio-fuse
-    mesa
-    mesa_drivers
   ];
 
   hardware.opengl.enable = true;
