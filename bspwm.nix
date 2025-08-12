@@ -6,7 +6,7 @@
         polybar &
         feh --bg-fill ~/Pictures/Art/skull-wallpaper.png
         dunst &
-        telegram-desktop &
+        Telegram &
         steam &
         kitty --class=bottom --hold sh -c "btm" &
         pgrep -x vesktop > /dev/null || vesktop &
