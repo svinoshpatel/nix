@@ -19,10 +19,10 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  hardware.opengl = {
-    enable = true;
-    driSupport32Bit = true;
-  };
+  #hardware.graphis = {
+  #  enable = true;
+  #  enable32Bit = true;
+  #};
 
   networking.hostName = "hruk"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
