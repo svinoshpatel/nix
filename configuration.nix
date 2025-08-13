@@ -12,16 +12,6 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # boot.kernelPackages = pkgs.linuxKernel.packages.linux_6_6;
-  boot.kernelPackages = pkgs.linuxPackagesFor (pkgs.linux_6_6.override {
-    argsOverride = rec {
-      src = pkgs.fetchurl {
-        url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.85.tar.xz";
-        sha256 = "<SHA256_HASH_FOR_6.6.85>";
-      };
-      version = "6.6.85";
-      modDirVersion = "6.6.85";
-    };
-  });
 
   boot.extraModulePackages = with config.boot.kernelPackages; [
     rtl88xxau-aircrack
