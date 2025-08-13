@@ -10,8 +10,9 @@
   # Bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelParams = [ "mitingations=off" ];
 
-  boot.kernelPackages = pkgs.linuxKernel.packages.linux_6_6;
+  boot.kernelPackages = pkgs.linuxKernel.packages.linux_6_6_hardened;
 
   boot.extraModulePackages = with config.boot.kernelPackages; [
     rtl88xxau-aircrack
@@ -36,7 +37,7 @@
   nix.gc = {
     automatic = true;
     dates = "weekly"; # runs the garbage collector once a week
-    options = "--delete-older-than 30d";  # Keeps last 30 days of generations
+    # options = "--delete-older-than 30d";  # Keeps last 30 days of generations
   };
   boot.loader.systemd-boot.configurationLimit = 10;  # Keeps last 10 boot entries
 
