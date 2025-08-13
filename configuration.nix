@@ -10,7 +10,6 @@
   # Bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelParams = [ "mitingations=off" ];
 
   boot.kernelPackages = pkgs.linuxKernel.packages.linux_6_6_hardened;
 
