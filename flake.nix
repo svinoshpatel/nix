@@ -16,7 +16,7 @@
       system = "x86_64-linux"; 
       modules = [
         ./configuration.nix
-        { boot.kernelPackages = nixpkgs-old.legacyPackages.x86-64-linux.linuxPackages_6_6; }
+        { boot.kernelPackages = nixpkgs-old.legacyPackages.x86_64-linux.linuxPackages_6_6; }
       ];
     };
 
