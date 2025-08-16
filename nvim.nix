@@ -14,7 +14,6 @@
       softtabstop = 4;
       smartindent = true;
 
-      ignorecase = true;
       smartcase = true;
       incsearch = true;
 
