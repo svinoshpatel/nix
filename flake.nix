@@ -5,13 +5,18 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-old.url = "github:NixOS/nixpkgs/c5dd43934613ae0f8ff37c59f61c507c2e8f980d";
 
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
     
-  outputs = { nixpkgs, home-manager, nixpkgs-old, ... }: {
+  outputs = { nixpkgs, home-manager, nixpkgs-old, nixvim, ... }: {
     nixosConfigurations.hruk = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux"; 
       modules = [
@@ -22,7 +27,7 @@
 
     homeConfigurations.svinoshpatel = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages."x86_64-linux";
-      modules = [ ./home.nix ];
+      modules = [ ./home.nix nixvim.homeManagerModules.nixvim ];
     };
   };
 }
