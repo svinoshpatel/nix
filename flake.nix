@@ -5,8 +5,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-old.url = "github:NixOS/nixpkgs/c5dd43934613ae0f8ff37c59f61c507c2e8f980d";
 
-    nixvim = {
-      url = "github:nix-community/nixvim";
+    nvf = {
+      url = "github:NotAShelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -16,7 +16,7 @@
     };
   };
     
-  outputs = { nixpkgs, home-manager, nixpkgs-old, nixvim, ... }: {
+  outputs = { nixpkgs, home-manager, nixpkgs-old, nvf, ... }: {
     nixosConfigurations.hruk = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux"; 
       modules = [
@@ -27,7 +27,7 @@
 
     homeConfigurations.svinoshpatel = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages."x86_64-linux";
-      modules = [ ./home.nix nixvim.homeManagerModules.nixvim ];
+      modules = [ ./home.nix nvf.homeManagerModules.default ];
     };
   };
 }
