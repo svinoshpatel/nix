@@ -32,7 +32,6 @@
       ignorecase = true;
       smartcase = true;
       incsearch = true;
-      hlsearch = false;
     };
   };
 }
