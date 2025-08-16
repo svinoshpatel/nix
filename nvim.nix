@@ -11,7 +11,6 @@
 				lsp.enable = true;
 
 				autopairs.nvim-autopairs.enable = true;
-				useSystemClipboard = true;
 				autocomplete.nvim-cmp.enable = true;
 
 				diagnostics = {
