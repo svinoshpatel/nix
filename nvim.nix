@@ -56,7 +56,7 @@
 				};
 
 				lazy.plugins = {
-					"vimbegood.nvim" = {
+					"vim-be-good" = {
 						package = pkgs.vimPlugins.vim-be-good;
 						event = [{event = "User"; pattern = "LazyFile";}];
 					};
