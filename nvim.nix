@@ -29,7 +29,7 @@
       softtabstop = 4;
       smartindent = true;
 
-      ignorecase = true;
+      ignorcase = true;
       smartcase = true;
       incsearch = true;
     };
