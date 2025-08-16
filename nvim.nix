@@ -12,7 +12,7 @@
 				statusline.lualine.enable = true;
 				telescope.enable = true;
 				autocomplete.nvim-cmp.enable = true;
-				diagnostic.enable = true;
+				diagnostics.enable = true;
 
 				theme = {
 					enable = true;
