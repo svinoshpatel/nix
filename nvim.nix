@@ -2,18 +2,17 @@
 	programs.nvf = {
 		enable = true;
 
-		# plugins = with pkgs.vimPlugins; [
-		# 	vim-be-good
-		# ];
-
 		settings = {
 			vim = {
 				clipboard.enable = true;
 				# clipboard.providers.xsel.enable = true;
 				statusline.lualine.enable = true;
 				telescope.enable = true;
-				autocomplete.nvim-cmp.enable = true;
 				lsp.enable = true;
+
+				autopair.nvim-autopairs.enable = true;
+				useSystemClipboard = true;
+				autocomplete.nvim-cmp.enable = true;
 
 				diagnostics = {
 					enable = true;
@@ -59,7 +58,7 @@
 				lazy.plugins = {
 					"vim-be-good" = {
 						package = pkgs.vimPlugins.vim-be-good;
-						event = [{event = "User"; pattern = "LazyFile";}];
+						cmd = ["VimBeGood"];
 					};
 				};
 			};
