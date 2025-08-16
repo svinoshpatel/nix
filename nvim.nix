@@ -2,7 +2,7 @@
   programs.nvf = {
     enable = true;
 
-    settings = {
+    # settings = {
         options = {
       number = true;
       relativenumber = true;
@@ -36,6 +36,6 @@
               html.enable = true;          
         };
       };
-    };
+    # };
   };
 }
