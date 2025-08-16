@@ -2,36 +2,38 @@
   programs.nvf = {
     enable = true;
 
-    # vim.clipboard.enable = true;
+    settings = {
+      number = true;
+      relativenumber = true;
+      termguicolors = true;
+      signcolumn = "yes";
+      scrolloff = 999;
 
-    # vim.theme = {
-    #   enable = true;
-    #   name = "catppuccin";
-    #   style = "mocha";
-    # };
+      tabstop = 4;
+      shiftwidth = 4;
+      softtabstop = 4;
+      smartindent = true;
 
-    # vim.languages = {
-    #   nix.enable = true;
-    #   clang.enable = true;
-    #   ts.enable = true;
-    #   html.enable = true;
-    # };
+      ignorecase = true;
+      smartcase = true;
+      incsearch = true;
 
-    # settings = {
-    #   number = true;
-    #   relativenumber = true;
-    #   termguicolors = true;
-    #   signcolumn = "yes";
-    #   scrolloff = 999;
+      vim = {
+            clipboard.enable = true;
 
-    #   tabstop = 4;
-    #   shiftwidth = 4;
-    #   softtabstop = 4;
-    #   smartindent = true;
+        theme = {
+                enable = true;
+                name = "catppuccin";
+                style = "mocha";
+        };
 
-    #   ignorcase = true;
-    #   smartcase = true;
-    #   incsearch = true;
-    # };
+        languages = {
+              nix.enable = true;
+              clang.enable = true;
+              ts.enable = true;
+              html.enable = true;          
+        };
+      };
+    };
   };
 }
