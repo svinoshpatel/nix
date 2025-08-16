@@ -3,6 +3,7 @@
     enable = true;
 
     settings = {
+        options = {
       number = true;
       relativenumber = true;
       termguicolors = true;
@@ -14,8 +15,10 @@
       softtabstop = 4;
       smartindent = true;
 
+        ignorecase = true;
       smartcase = true;
       incsearch = true;
+        };
 
       vim = {
             clipboard.enable = true;
