@@ -33,7 +33,11 @@
 					nix.enable = true;
 					clang.enable = true;
 					ts.enable = true;
-					html.enable = true;          
+
+					html = {
+						enable = true;          
+						treesitter.autotagHtml = true;
+					};
 				};
 				
 				options = {
@@ -53,6 +57,7 @@
 
 					ignorecase = true;
 					smartcase = true;
+					hlsearch = false;
 					incsearch = true;
 				};
 
