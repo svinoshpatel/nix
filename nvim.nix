@@ -1,9 +1,9 @@
 {
   programs.nvf = {
     enable = true;
+      number = true;
 
     settings = {
-      number = true;
       # relativenumber = true;
       # termguicolors = true;
       # signcolumn = "yes";
