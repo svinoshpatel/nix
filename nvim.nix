@@ -7,7 +7,7 @@
 				clipboard.enable = true;
 				statusline.lualine.enable = true;
 				telescipe.enable = true;
-				autocomplete.nvim-cmp-enable = true;
+				autocomplete.nvim-cmp.enable = true;
 
 				theme = {
 					enable = true;
