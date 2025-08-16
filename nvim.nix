@@ -6,7 +6,7 @@
 			vim = {
 				clipboard.enable = true;
 				statusline.lualine.enable = true;
-				telescipe.enable = true;
+				telescope.enable = true;
 				autocomplete.nvim-cmp.enable = true;
 
 				theme = {
