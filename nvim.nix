@@ -32,6 +32,6 @@
     #   ignorcase = true;
     #   smartcase = true;
     #   incsearch = true;
-    };
+    # };
   };
 }
