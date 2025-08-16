@@ -10,7 +10,7 @@
 				telescope.enable = true;
 				lsp.enable = true;
 
-				autopair.nvim-autopairs.enable = true;
+				autopairs.nvim-autopairs.enable = true;
 				useSystemClipboard = true;
 				autocomplete.nvim-cmp.enable = true;
 
