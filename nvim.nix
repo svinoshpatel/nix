@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
 	programs.nvf = {
 		enable = true;
 
@@ -12,12 +12,13 @@
 				statusline.lualine.enable = true;
 				telescope.enable = true;
 				autocomplete.nvim-cmp.enable = true;
+				lsp.enable = true;
+
 				diagnostics = {
 					enable = true;
 					config.virtual_text = true;
 					config.signs = true;
 				};
-				lsp.enable = true;
 
 				theme = {
 					enable = true;
@@ -52,6 +53,15 @@
 					ignorecase = true;
 					smartcase = true;
 					incsearch = true;
+				};
+
+				lazy.plugins = {
+					"vimbegood.nvim" = {
+						package = pkgs.vimPlugins.vim-be-good;
+						setupModule = "vimBeGood";
+					};
+					lazy = true;
+					cmd = ["VimBeGood"];
 				};
 			};
 		};
