@@ -3,7 +3,6 @@
     enable = true;
 
     settings = {
-        options = {
       number = true;
       relativenumber = true;
       termguicolors = true;
@@ -18,7 +17,6 @@
         ignorecase = true;
       smartcase = true;
       incsearch = true;
-        };
 
       vim = {
             clipboard.enable = true;
