@@ -12,6 +12,11 @@
 				autopairs.nvim-autopairs.enable = true;
 				autocomplete.nvim-cmp.enable = true;
 
+				treesitter = {
+					enable = true;
+					autotagHtml = true;
+				};
+
 				diagnostics = {
 					enable = true;
 					config.virtual_text = true;
@@ -25,8 +30,6 @@
 				};
 
 				languages = {
-					enableTreesitter = true;
-
 					nix.enable = true;
 					clang.enable = true;
 					ts.enable = true;
