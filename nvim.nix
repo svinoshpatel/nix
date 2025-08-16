@@ -2,12 +2,17 @@
 	programs.nvf = {
 		enable = true;
 
+		# plugins = with pkgs.vimPlugins; [
+		# 	vim-be-good
+		# ];
+
 		settings = {
 			vim = {
 				clipboard.enable = true;
 				statusline.lualine.enable = true;
 				telescope.enable = true;
 				autocomplete.nvim-cmp.enable = true;
+				diagnostic.enable = true;
 
 				theme = {
 					enable = true;
@@ -30,13 +35,15 @@
 					relativenumber = true;
 					termguicolors = true;
 					signcolumn = "yes";
-					scrolloff = 999;
+					scrolloff = 8;
 
 					tabstop = 4;
 					shiftwidth = 4;
 					softtabstop = 0;
 					smartindent = true;
 					expandtab = false;
+
+					wrap = false;
 
 					ignorecase = true;
 					smartcase = true;
