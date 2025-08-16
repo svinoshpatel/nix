@@ -118,6 +118,7 @@
     pamixer
     pavucontrol
     soundwireserver
+    spotify
     polybar
     peek
     protontricks
