@@ -1,22 +1,24 @@
 {
   programs.nvf = {
     enable = true;
-      number = true;
 
     settings = {
-      # relativenumber = true;
-      # termguicolors = true;
-      # signcolumn = "yes";
-      # scrolloff = 999;
-      #
-      # tabstop = 4;
-      # shiftwidth = 4;
-      # softtabstop = 4;
-      # smartindent = true;
-      #
-      #   ignorecase = true;
-      # smartcase = true;
-      # incsearch = true;
+        options = {
+      number = true;
+      relativenumber = true;
+      termguicolors = true;
+      signcolumn = "yes";
+      scrolloff = 999;
+
+      tabstop = 4;
+      shiftwidth = 4;
+        softtabstop = 4;
+        smartindent = true;
+
+        ignorecase = true;
+        smartcase = true;
+        incsearch = true;
+        };
 
       vim = {
             clipboard.enable = true;
