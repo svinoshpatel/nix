@@ -9,7 +9,7 @@
 		settings = {
 			vim = {
 				clipboard.enable = true;
-				clipboard.providers.xsel.enable = true;
+				# clipboard.providers.xsel.enable = true;
 				statusline.lualine.enable = true;
 				telescope.enable = true;
 				autocomplete.nvim-cmp.enable = true;
