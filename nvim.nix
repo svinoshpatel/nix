@@ -2,7 +2,7 @@
   programs.nvf = {
     enable = true;
 
-    clipboard.enable = true;
+    vim.clipboard.enable = true;
 
     theme = {
       enable = true;
