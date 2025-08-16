@@ -11,10 +11,10 @@
         style = "mocha";
       };
       languages = {
-        nix.enable;
-        clang.enable;
-        ts.enable;
-        html.enable;
+        nix.enable = true;
+        clang.enable = true;
+        ts.enable = true;
+        html.enable = true;
       };
     };
 
