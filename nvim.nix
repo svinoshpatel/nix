@@ -10,7 +10,7 @@
       style = "mocha";
     };
 
-    languages = {
+    vim.languages = {
       nix.enable = true;
       clang.enable = true;
       ts.enable = true;
