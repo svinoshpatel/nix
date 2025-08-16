@@ -5,7 +5,6 @@
 		settings = {
 			vim = {
 				clipboard.enable = true;
-				# clipboard.providers.xsel.enable = true;
 				statusline.lualine.enable = true;
 				telescope.enable = true;
 				lsp.enable = true;
@@ -58,7 +57,7 @@
 					{
 						key = "<leader>p";
 						mode = "x";
-						action = "_dP";
+						action = "\"_dP";
 					}
 				];
 
