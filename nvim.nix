@@ -2,7 +2,7 @@
   programs.nvf = {
     enable = true;
 
-    # settings = {
+    settings = {
 
       vim = {
             clipboard.enable = true;
@@ -36,6 +36,6 @@
         incsearch = true;
         };
       };
-    # };
+    };
   };
 }
