@@ -17,21 +17,21 @@
     #   html.enable = true;
     # };
 
-    settings = {
-      number = true;
-      relativenumber = true;
-      termguicolors = true;
-      signcolumn = "yes";
-      scrolloff = 999;
+    # settings = {
+    #   number = true;
+    #   relativenumber = true;
+    #   termguicolors = true;
+    #   signcolumn = "yes";
+    #   scrolloff = 999;
 
-      tabstop = 4;
-      shiftwidth = 4;
-      softtabstop = 4;
-      smartindent = true;
+    #   tabstop = 4;
+    #   shiftwidth = 4;
+    #   softtabstop = 4;
+    #   smartindent = true;
 
-      ignorcase = true;
-      smartcase = true;
-      incsearch = true;
+    #   ignorcase = true;
+    #   smartcase = true;
+    #   incsearch = true;
     };
   };
 }
