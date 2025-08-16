@@ -59,6 +59,16 @@
 						mode = "x";
 						action = "\"_dP";
 					}
+					{
+						key = "<leader>y";
+						mode = ["n" "v"];
+						action = "\"+y";
+					}
+					{
+						key = "<leader>Y";
+						mode = "n";
+						action = "\"+Y";
+					}
 				];
 
 				lazy.plugins = {
