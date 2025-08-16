@@ -54,6 +54,14 @@
 					incsearch = true;
 				};
 
+				keymaps = [
+					{
+						key = "<leader>p";
+						mode = "x";
+						action = "_dP";
+					}
+				];
+
 				lazy.plugins = {
 					"vim-be-good" = {
 						package = pkgs.vimPlugins.vim-be-good;
