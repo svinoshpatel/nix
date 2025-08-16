@@ -2,20 +2,19 @@
   programs.nvf = {
     enable = true;
 
-    vim = {
-      clipboard.enable = true;
+    clipboard.enable = true;
 
-      theme = {
-        enable = true;
-        name = "catppuccin";
-        style = "mocha";
-      };
-      languages = {
-        nix.enable = true;
-        clang.enable = true;
-        ts.enable = true;
-        html.enable = true;
-      };
+    theme = {
+      enable = true;
+      name = "catppuccin";
+      style = "mocha";
+    };
+
+    languages = {
+      nix.enable = true;
+      clang.enable = true;
+      ts.enable = true;
+      html.enable = true;
     };
 
     settings = {
