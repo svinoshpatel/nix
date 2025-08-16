@@ -58,10 +58,8 @@
 				lazy.plugins = {
 					"vimbegood.nvim" = {
 						package = pkgs.vimPlugins.vim-be-good;
-						setupModule = "vimBeGood";
+						event = [{event = "User"; pattern = "LazyFile";}];
 					};
-					lazy = true;
-					cmd = ["VimBeGood"];
 				};
 			};
 		};
