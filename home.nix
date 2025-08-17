@@ -57,23 +57,23 @@
 			git push
       	end
 
-		function fzd
+		function ffd
 			set dir (fd -t d . -E .cache -E compatdata -E .compose-cache -E .config | fzf)
 			if test -n "$dir"
 				cd $dir
 			end
 		end
 
-		bind alt-d fzd
+		bind alt-d ffd
 
-		function fzf
+		function ff
 			set file (fd -t f . -E .cache -E compatdata -E .compose-cache -E .config | fzf)
 			if test -n "$file"
 				nvim $file
 			end
 		end
 
-		bind alt-f fzf
+		bind alt-f ff
     '';
   };
 
