@@ -64,7 +64,7 @@
 			end
 		end
 
-		bind /ec fzf-cd
+		bind alt-c 'fzf-cd'
     '';
   };
 
