@@ -90,6 +90,7 @@
     flameshot
     foliate
     fpc
+	fzf
     easyeffects
     gcc
     godot
