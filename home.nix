@@ -60,7 +60,7 @@
 		function fzf-cd
 			set dir (
 				fd 
-					-type d . 
+					-t d . 
 					-E .cache/
 					-E compatdata/
 					-E .compose-cache/
