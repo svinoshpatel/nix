@@ -67,7 +67,7 @@
 		bind alt-d fzf-cd
 
 		function fzf-vim
-			set file (fd -t d . -E .cache -E compatdata -E .compose-cache -E .config | fzf)
+			set file (fd -t f . -E .cache -E compatdata -E .compose-cache -E .config | fzf)
 			if test -n "$file"
 				nvim $file
 			end
