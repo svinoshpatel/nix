@@ -39,6 +39,7 @@
 					nix.enable = true;
 					clang.enable = true;
 					ts.enable = true;
+					ts.treesitter.enable = true;
 
 					html = {
 						enable = true;          
