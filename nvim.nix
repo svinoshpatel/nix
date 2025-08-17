@@ -14,6 +14,8 @@
 				ui.colorizer.enable = true;
 				binds.whichKey.enable = true;
 				navigation.harpoon.enable = true;
+				git.vim-fugitive.enable = true;
+				utility.undotree.enable = true;
 
 				treesitter = {
 					enable = true;
@@ -62,6 +64,10 @@
 					smartcase = true;
 					hlsearch = false;
 					incsearch = true;
+
+					updatetime = 50;	
+
+					colorcolumn = 80;
 				};
 
 				keymaps = [
