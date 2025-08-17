@@ -9,6 +9,7 @@
     ./git.nix
     ./nvim.nix
 	./fzf.nix
+	./tmux.nix
   ];
 
   home = {
