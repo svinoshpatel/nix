@@ -64,17 +64,17 @@
 			end
 		end
 
-
-		function fzf-vim
-			set file (fd -t f . -E .cache -E compatdata -E .compose-cache -E .config | fzf)
-			if test -n "$file"
-				nvim $file
-			end
-		end
-
 		bind alt-d fzf-cd
-		bind alt-f fzf-vim
+
     '';
+		# function fzf-vim
+		# 	set file (fd -t f . -E .cache -E compatdata -E .compose-cache -E .config | fzf)
+		# 	if test -n "$file"
+		# 		nvim $file
+		# 	end
+		# end
+		#
+		# bind alt-f fzf-vim
   };
 
   programs.lazygit.enable = true;
