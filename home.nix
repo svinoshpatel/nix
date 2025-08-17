@@ -58,7 +58,7 @@
       	end
 
 		function fzf-cd
-			set dir (fd -type d . | fzf)
+			set dir (fd -type d . -E .cache -E .compose-cache -E .config | fzf)
 			if test -n "$dir"
 				cd $dir
 			end
