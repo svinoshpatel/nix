@@ -58,7 +58,14 @@
       	end
 
 		function fzf-cd
-			set dir (fd -type d . -E .cache -E .compose-cache -E .config | fzf)
+			set dir (
+				fd 
+					-type d . 
+					--exclude .cache 
+					-E compatdata 
+					-E .compose-cache 
+					-E .config | fzf
+			)
 			if test -n "$dir"
 				cd $dir
 			end
