@@ -3,7 +3,7 @@
 		enable = true;
 		baseIndex = 1;
 		clock24 = true;
-		excapeTime = 0;
+		escapeTime = 0;
 		keyMode = "vi";
 		prefix = "C-a";
 		shell = /run/current-system/sw/bin/fish;
