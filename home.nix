@@ -64,8 +64,7 @@
 			end
 		end
 
-		bind -e alt-d
-		bind alt-d fzf-cd
+		bind alt-d 'fzf-cd'
 
 		function fzf-vim
 			set file (fd -t f . -E .cache -E compatdata -E .compose-cache -E .config | fzf)
@@ -74,8 +73,7 @@
 			end
 		end
 
-		bind -e alt-f
-		bind alt-f fzf-vim
+		bind alt-f 'fzf-vim'
     '';
   };
 
