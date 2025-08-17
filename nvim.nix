@@ -11,6 +11,9 @@
 
 				autopairs.nvim-autopairs.enable = true;
 				autocomplete.nvim-cmp.enable = true;
+				ui.colorizer.enable = true;
+				binds.whichKey.enable = true;
+				navigation.harpoon.enable = true;
 
 				treesitter = {
 					enable = true;
