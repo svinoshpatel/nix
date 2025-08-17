@@ -25,8 +25,6 @@
     enable = true;
     shellAliases = {
 		vim = "nvim";
-		fd = "fzf-cd";
-		ff = "fzf-file";
     };
     shellInit = ''
 		function sshon
@@ -59,7 +57,7 @@
 			git push
       	end
 
-		function fzf-cd
+		function fd
 			set dir (fd -t d . -E .cache -E compatdata -E .compose-cache -E .config | fzf)
 			if test -n "$dir"
 				cd $dir
@@ -68,7 +66,7 @@
 
 		bind alt-d fzf-cd
 
-		function fzf-vim
+		function ff
 			set file (fd -t f . -E .cache -E compatdata -E .compose-cache -E .config | fzf)
 			if test -n "$file"
 				nvim $file
