@@ -59,7 +59,7 @@
 
 		function fzf-cd
 			set dir (fd -t d . -E .cache -E compatdata -E .compose-cache -E .config | fzf)
-			if test -n "$(dir)"
+			if test -n "$dir"
 				cd $(dir)
 			end
 		end
@@ -68,7 +68,7 @@
 
 		function fzf-vim
 			set file (fd -t f . -E .cache -E compatdata -E .compose-cache -E .config | fzf)
-			if test -n "$(file)"
+			if test -n "$file"
 				nvim $(file)
 			end
 		end
