@@ -58,7 +58,7 @@
       	end
 
 		function fzf-cd
-			set dir (find . -type d 2>/dev/null | fzf)
+			set dir (fd -type d . | fzf)
 			if test -n "$dir"
 				cd $dir
 			end
