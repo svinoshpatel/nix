@@ -61,10 +61,10 @@
 			set dir (
 				fd 
 					-type d . 
-					--exclude .cache 
-					-E compatdata 
-					-E .compose-cache 
-					-E .config | fzf
+					-E .cache/
+					-E compatdata/
+					-E .compose-cache/
+					-E .config/ | fzf
 			)
 			if test -n "$dir"
 				cd $dir
