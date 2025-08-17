@@ -1,5 +1,4 @@
-{ config, pkgs, nvchad4nix, ... }: {
-
+{
   imports = [
     ./sxhkd.nix
     ./bspwm.nix
@@ -9,6 +8,7 @@
     ./helix.nix
     ./git.nix
     ./nvim.nix
+	./fzf.nix
   ];
 
   home = {
