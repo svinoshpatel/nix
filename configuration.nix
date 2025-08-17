@@ -159,6 +159,7 @@
     kdePackages.karchive
     kdePackages.kio
     kdePackages.kio-fuse
+  	posting
   ];
 
   environment.variables = {
