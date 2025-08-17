@@ -23,8 +23,8 @@
   programs.fish = {
     enable = true;
     shellAliases = {
-      # rebuild = "sudo nixos-rebuild switch --flake ~/nix";
-      # homeswitch = "home-manager switch --flake ~/nix";
+		vim = "nvim";
+		ff = "nvim $(fzf)";
     };
     shellInit = ''
 		function sshon
