@@ -24,7 +24,8 @@
     enable = true;
     shellAliases = {
 		vim = "nvim";
-		ff = "nvim $(fzf)";
+		fd = "fzf-cd";
+		ff = "fzf-file";
     };
     shellInit = ''
 		function sshon
@@ -64,7 +65,7 @@
 			end
 		end
 
-		bind alt-d "begin; fzf-cd; end"
+		bind alt-d fzf-cd
 
 		function fzf-vim
 			set file (fd -t f . -E .cache -E compatdata -E .compose-cache -E .config | fzf)
