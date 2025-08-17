@@ -6,7 +6,7 @@
 		escapeTime = 0;
 		keyMode = "vi";
 		prefix = "C-a";
-		shell = /run/current-system/sw/bin/fish;
+		shell = "/run/current-system/sw/bin/fish";
 		shortcut = "a";
 		terminal = "screen-256color";
 	};
