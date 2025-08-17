@@ -27,35 +27,44 @@
       # homeswitch = "home-manager switch --flake ~/nix";
     };
     shellInit = ''
-      function sshon
-        eval (ssh-agent -c)
-        ssh-add ~/.ssh/svinpass
-      end
+		function sshon
+			eval (ssh-agent -c)
+			ssh-add ~/.ssh/svinpass
+		end
 
-      function update
-        cd ~/nix
-        nix flake update
-        sudo nixos-rebuild switch --flake .
-        git commit -am "Update flake.lock"
-        sshon
-        git push
-      end
+      	function update
+			cd ~/nix
+			nix flake update
+			sudo nixos-rebuild switch --flake .
+			git commit -am "Update flake.lock"
+			sshon
+			git push
+      	end
 
-      function rebuild
-        cd ~/nix
-        sudo nixos-rebuild switch --flake .
-        git commit -am "System rebuild"
-        sshon
-        git push
-      end
+      	function rebuild
+			cd ~/nix
+			sudo nixos-rebuild switch --flake .
+			git commit -am "System rebuild"
+			sshon
+			git push
+	  	end
 
-      function homeswitch
-        cd ~/nix
-        home-manager switch --flake .
-        git commit -am "Home manager rebuild"
-        sshon
-        git push
-      end
+      	function homeswitch
+			cd ~/nix
+			home-manager switch --flake .
+			git commit -am "Home manager rebuild"
+			sshon
+			git push
+      	end
+
+		function fzf-cd
+			set dir (find . -type d 2>/dev/null | fzf)
+			if test -n "$dir"
+				cd $dir
+			end
+		end
+
+		bind /ec fzf-cd
     '';
   };
 
