@@ -87,6 +87,7 @@
     google-chrome
     feh
     firefox
+	fd
     flameshot
     foliate
     fpc
