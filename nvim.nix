@@ -13,9 +13,18 @@
 				autocomplete.nvim-cmp.enable = true;
 				ui.colorizer.enable = true;
 				binds.whichKey.enable = true;
-				navigation.harpoon.enable = true;
 				git.vim-fugitive.enable = true;
 				utility.undotree.enable = true;
+
+				navigation.harpoon = {
+					enable = true;
+					mappings = {
+						file1 = "<C-h>";
+						file2 = "<C-j>";
+						file3 = "<C-k>";
+						file4 = "<C-l>";
+					};
+				};
 
 				treesitter = {
 					enable = true;
