@@ -5,9 +5,9 @@
 		clock24 = true;
 		escapeTime = 0;
 		keyMode = "vi";
-		# prefix = "C-a";
+		prefix = "C-a";
 		shell = "/run/current-system/sw/bin/fish";
-		# shortcut = "a";
+		shortcut = "a";
 		terminal = "screen-256color";
 	};
 }
