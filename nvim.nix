@@ -49,6 +49,7 @@
 					clang.enable = true;
 					ts.enable = true;
 					ts.treesitter.enable = true;
+					tailwind.enable = true;
 
 					html = {
 						enable = true;          
