@@ -196,6 +196,10 @@
   security.rtkit.enable = true;
 
   services = {
+    desktopManager.plasma6.enable = true;
+    displayManager.sddm.enable = true;
+    displayManager.sddm.wayland.enable = true;
+
     pipewire = {
       enable = true;
       alsa.enable = true;
@@ -221,9 +225,22 @@
       };
     };
 
-    desktopManager.plasma6.enable = true;
-    displayManager.sddm.enable = true;
-    displayManager.sddm.wayland.enable = true;
+	minecraft-server = {
+		enable = true;
+		eula = true;
+		openFirewall = true;
+		declarative = true;
+		jvmOpts = "-Xms2G -Xmx6G";
+		serverProperties = {
+			server-port = 6666;
+			difficulty = 3;
+			gamemode = 0;
+			max-players = 2;
+			motd = "SPATKO FREE TERRITORY";
+			simulation-distance = 12;
+			pvp = false;
+		};
+	};
   };
 
   # services.xserver.displayManager.lightdm.enable = true;
