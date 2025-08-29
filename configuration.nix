@@ -232,7 +232,6 @@
 		declarative = true;
 		jvmOpts = "-Xms2G -Xmx6G";
 		serverProperties = {
-			server-port = 6666;
 			difficulty = 3;
 			gamemode = 0;
 			max-players = 2;
