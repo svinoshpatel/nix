@@ -231,16 +231,6 @@
 		openFirewall = true;
 		declarative = true;
 		jvmOpts = "-Xms2G -Xmx6G";
-		package = pkgs.stdenv.mkDerivation {
-			version = "25w33a";
-			pname = "minecraft-server25w33a";
-			src = /var/lib/minecraft/versions/25w33a/server.jar;
-			dontUnpack = true;
-			installPhase = ''
-				mkdir -p $out
-				cp $src $out/server.jar
-			'';
-		};
 		serverProperties = {
 			server-port = 6666;
 			difficulty = 3;
