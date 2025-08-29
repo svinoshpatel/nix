@@ -239,7 +239,7 @@
 			motd = "SPATKO FREE TERRITORY";
 			simulation-distance = 12;
 			pvp = false;
-			level-name = "Glupovo";
+			level-name = "Rozumnpovo";
 		};
 	};
   };
