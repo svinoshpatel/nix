@@ -237,6 +237,7 @@
 			max-players = 2;
 			motd = "SPATKO FREE TERRITORY";
 			simulation-distance = 12;
+			view-distance = 18;
 			pvp = false;
 			level-name = "Rozumnpovo";
 		};
