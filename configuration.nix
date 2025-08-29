@@ -232,14 +232,10 @@
 		declarative = true;
 		jvmOpts = "-Xms2G -Xmx6G";
 		package = pkgs.stdenv.mkDerivation {
-			pname = "minecraft-server-25w33a";
-			version = "25w33a";
-			src = pkgs.fetchurl {
-				url = "https://piston-data.mojang.com/v1/objects/83027f72aa7957837aeeaef499c67105583d0928/server.jar";
-				sha256 = "1pbmh4ksxcn7fw50y6dmain12ap9jq1zh4bydm3w5g9wymfxnjv6";
-			};
+			pname = "minecraft-server25w33a";
+			src = /var/lib/minecraft/versions/25w33a/server.jar;
 			dontUnpack = true;
-			installPhase = ''
+			intallPhase = ''
 				mkdir -p $out
 				cp $src $out/server.jar
 			'';
