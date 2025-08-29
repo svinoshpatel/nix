@@ -236,7 +236,7 @@
 			pname = "minecraft-server25w33a";
 			src = /var/lib/minecraft/versions/25w33a/server.jar;
 			dontUnpack = true;
-			intallPhase = ''
+			installPhase = ''
 				mkdir -p $out
 				cp $src $out/server.jar
 			'';
