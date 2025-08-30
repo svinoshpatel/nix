@@ -226,7 +226,7 @@
     };
 
 	minecraft-server = {
-		enable = false;
+		enable = true;
 		eula = true;
 		openFirewall = true;
 		declarative = true;
