@@ -15,7 +15,10 @@
 				binds.whichKey.enable = true;
 				git.vim-fugitive.enable = true;
 				utility.undotree.enable = true;
-				visuals.indent-blankline.enable = true;
+				visuals.indent-blankline = {
+					enable = true;
+					setupOpts.scope.enabled = false;
+				};
 
 				navigation.harpoon = {
 					enable = true;
