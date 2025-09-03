@@ -242,6 +242,8 @@
 			level-name = "Rozumnpovo";
 		};
 	};
+
+	postgresql.enable = true;
   };
 
   # services.xserver.displayManager.lightdm.enable = true;
