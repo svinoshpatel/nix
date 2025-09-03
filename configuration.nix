@@ -245,7 +245,7 @@
 
 	postgresql.enable = true;
 	xrdp.enable = true;
-	xrdp.defaultWindowManager = "bspwm";
+	xrdp.defaultWindowManager = "startplasma-wayland";
   };
 
   # services.xserver.displayManager.lightdm.enable = true;
