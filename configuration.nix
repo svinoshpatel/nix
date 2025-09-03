@@ -245,6 +245,7 @@
 	};
 
 	postgresql.enable = true;
+	gnome.gnome-remote-desktop.enable = true;
   };
 
   # services.xserver.displayManager.lightdm.enable = true;
