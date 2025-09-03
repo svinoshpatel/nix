@@ -161,7 +161,6 @@
     kdePackages.kio-fuse
 	kdePackages.kcolorchooser
   	posting
-	gnome-remote-desktop
   ];
 
   environment.variables = {
@@ -245,7 +244,7 @@
 	};
 
 	postgresql.enable = true;
-	gnome.gnome-remote-desktop.enable = true;
+	xrdp.enable = true;
   };
 
   # services.xserver.displayManager.lightdm.enable = true;
@@ -254,6 +253,7 @@
   xdg.portal.extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
 
   networking.firewall.enable = false;
+  networlink.firewall.allowedTCPPorts = [ 3389 ];
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
