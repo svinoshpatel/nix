@@ -199,6 +199,7 @@
     desktopManager.plasma6.enable = true;
     displayManager.sddm.enable = true;
     displayManager.sddm.wayland.enable = true;
+	postgresql.enable = true;
 
     pipewire = {
       enable = true;
@@ -243,7 +244,13 @@
 		};
 	};
 
-	postgresql.enable = true;
+	openssh = {
+		enable = true;
+		ports = [ 22 ];
+		settings = {
+			X11Forwarding = true;
+		};
+	};
   };
 
   # services.xserver.displayManager.lightdm.enable = true;
@@ -253,14 +260,6 @@
 
   networking.firewall.enable = false;
   networking.firewall.allowedTCPPorts = [ 22 ];
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
