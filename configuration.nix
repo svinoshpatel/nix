@@ -245,6 +245,7 @@
 
 	postgresql.enable = true;
 	xrdp.enable = true;
+	xrdp.defaultWindowManager = "bspwm";
   };
 
   # services.xserver.displayManager.lightdm.enable = true;
