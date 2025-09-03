@@ -244,8 +244,6 @@
 	};
 
 	postgresql.enable = true;
-	xrdp.enable = true;
-	xrdp.defaultWindowManager = "startplasma-wayland";
   };
 
   # services.xserver.displayManager.lightdm.enable = true;
@@ -256,7 +254,7 @@
   networking.firewall.enable = false;
   networking.firewall.allowedTCPPorts = [ 3389 ];
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
