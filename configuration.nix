@@ -161,6 +161,7 @@
     kdePackages.kio-fuse
 	kdePackages.kcolorchooser
   	posting
+	nomachine-client
   ];
 
   environment.variables = {
