@@ -252,7 +252,7 @@
   xdg.portal.extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
 
   networking.firewall.enable = false;
-  networking.firewall.allowedTCPPorts = [ 3389 ];
+  networking.firewall.allowedTCPPorts = [ 22 ];
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
