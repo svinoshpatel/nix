@@ -54,6 +54,12 @@
 					ts.enable = true;
 					ts.treesitter.enable = true;
 					tailwind.enable = true;
+					
+					sql = {
+						enable = true;
+						extraDiagnostics.enable = true;
+						format.enable = true;
+					};
 
 					html = {
 						enable = true;          
