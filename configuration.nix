@@ -161,7 +161,7 @@
     kdePackages.kio-fuse
 	kdePackages.kcolorchooser
   	posting
-	nomachine-client
+	gnome-remote-desktop
   ];
 
   environment.variables = {
